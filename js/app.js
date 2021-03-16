@@ -1,5 +1,4 @@
 'use strict';
-
 let userName = prompt('what is your name ?');
 
 alert(`Hello ${userName} Lets play guessing game ,please answer yes/no or y/n ` );
@@ -75,3 +74,37 @@ else if(exp.toLowerCase() === 'no' || exp.toLocaleUpperCase() === 'N')
   //console.log('do I have any experience? you answer are correct');
 }
 alert('thanks you for palying');
+
+//6th question
+let x = 6;
+let number=prompt('guess a number between 0 and 100 you have ' + x +' attempt');
+
+if(number === '63')
+{
+  alert('you are hacking, your are correct');}
+else for(let i=0 ;i<5 && number!==63 ;i++)
+{
+
+  if (number > 63)
+  {
+    x--;
+    number=prompt('too High you have ' + x +' attempt left');
+    //console.log(x);
+  }
+  else if (number < 63)
+  {
+    x--;
+    number=prompt('too low you have ' + x +' attempt left');
+    //console.log(x);
+  }
+  else if (x===1){
+    i=i/i+5;}
+  else if(number === '63')
+  {
+    i=i/i+5;
+    alert('good guess you are correct');}
+}
+if(x===1)
+{
+  alert ('sorry you are out of attempt');
+}
