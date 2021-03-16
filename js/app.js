@@ -1,76 +1,76 @@
 'use strict';
 let userName = prompt('what is your name ?');
-
-let gender=prompt('are you a male ?');
-let age =prompt('is your age above 25 ?');
-let live=prompt('do you live in irbid?');
-let bacalo=prompt('do you have bacalorous degree?');
-let exp=prompt('do you have any experience?');
 alert('wellcome '+ userName);
-if(gender.toLowerCase() === 'yes' || gender === 'y')
+alert('please answer yes/no or y/n ');
+
+let age =prompt('is my age above 25 ?');
+
+if(age.toLowerCase() === 'yes' || age.toLocaleUpperCase() === 'Y')
 {
-  let gen='male';
-  console.log('you are a male');
-  alert(gen);
+  alert('incorrect');
+  console.log(age);
+
 }
-else if(gender.toLowerCase() === 'no' || gender === 'n')
+else if(age.toLowerCase() === 'no' || age.toLocaleUpperCase() === 'N')
 {
-  let gen='female';
-  console.log('you are a female');
-  alert(gen);
-}
-if(age.toLowerCase() === 'yes' || age === 'y')
-{
-  let age1='above 25';
-  console.log('your age mabe 26');
-  alert(age1);
-}
-else if(age.toLowerCase() === 'no' || age === 'n')
-{
-  let age1='under 25';
-  console.log('your age maybe 24 ');
-  alert(age1);
+  alert('correct');
+  console.log(age);
 }
 
-if(live.toLowerCase() === 'yes' || live === 'y')
-{
-  let life='you live in irbid';
-  console.log('you live in irbid');
-  alert(life);
-}
-else if(live.toLowerCase() === 'no' || live === 'n')
-{
-  let life='you live out of irbid';
-  console.log('you dont live in irbid');
-  alert(life);
-}
+let born=prompt('do I born in aqaba ?');
 
-if(bacalo.toLowerCase() === 'yes' || bacalo === 'y')
+if(born.toLowerCase() === 'yes' || born.toLocaleUpperCase() === 'Y')
 {
-  let baca='you have bacalorous degree';
-  console.log('you have bacalorous degree');
-  alert(baca);
+  alert('correct');
+  console.log(born);
+
 }
-else if(bacalo.toLowerCase() === 'no' || bacalo === 'n')
+else if(born.toLowerCase() === 'no' || born.toLocaleUpperCase() === 'N')
 {
-  let baca='you dont have bacalorous degree';
-  console.log('you dont  have bacalorous degree');
-  alert(baca);
+  alert('incorrect');
+  console.log(born);
 }
 
-if(exp.toLowerCase() === 'yes' || exp === 'y')
+let live=prompt('do I live in irbid?');
+
+if(live.toLowerCase() === 'yes' || live.toLocaleUpperCase() === 'Y')
 {
-  let exp=prompt('how long your experience?');
-  console.log('you have '+exp+'  years of experience');
-  alert('you have '+exp+'  years of experience');
+  alert('correct');
+  console.log(live);
+
 }
-else if(exp.toLowerCase() === 'no' || exp === 'n')
+else if(live.toLowerCase() === 'no' || live.toLocaleUpperCase() === 'N')
 {
-  console.log('you dont have any experience');
-  alert('you dont have any experience');
+  alert('incorrect');
+  console.log(live);
 }
 
+let bacalo=prompt('do I have bacalorous degree?');
+
+if(bacalo.toLowerCase() === 'yes' || bacalo.toLocaleUpperCase() === 'Y')
+{
+  alert('correct');
+  console.log(bacalo);
+
+}
+else if(bacalo.toLowerCase() === 'no' || bacalo.toLocaleUpperCase() === 'N')
+{
+  alert('incorrect');
+  console.log(bacalo);
+
+}
+let exp=prompt('do I have any experience?');
 
 
+if(exp.toLowerCase() === 'yes' || exp.toLocaleUpperCase() === 'Y')
+{
+  alert('incorrect ');
+  console.log(exp);
 
-
+}
+else if(exp.toLowerCase() === 'no' || exp.toLocaleUpperCase() === 'N')
+{
+  alert('correct');
+  console.log(exp);
+}
+alert('thanks you for palying');
