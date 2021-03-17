@@ -108,3 +108,27 @@ if(x===1)
 {
   alert ('sorry you are out of attempt  the correct answer is 63');
 }
+
+//7th question
+let fav='';
+let grade=0;
+let colors = ['red','green','white'];
+let correct = false;
+for (let i = 1; i <= 6; i++) {
+  fav = prompt('what is my favarite colors ?');
+  for (let i = 0; i < colors.length; i++) {
+    if (fav === colors[1])
+    {console.log(colors);
+      console.log(i);
+      correct = true;
+      grade++;
+      break;
+    }
+
+  }
+  if (correct) {
+    alert('correct answer');
+    break;
+  }
+
+}alert('your final grade ' + grade + ' of  3');
