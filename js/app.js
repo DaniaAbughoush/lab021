@@ -106,5 +106,5 @@ else for(let i=0 ;i<5 && number!==63 ;i++)
 }
 if(x===1)
 {
-  alert ('sorry you are out of attempt');
+  alert ('sorry you are out of attempt  the correct answer is 63');
 }
